@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-galeria.css">
+    <title>Galeria</title>
+</head>
+<body>
+    <div class="hamburguer" id="hamburguer">☰</div>
+
+    <nav class="menu" id="menu">
+        <a href="#">Início</a>
+        <a href="#">Times</a>
+        <a href="#">Jogos</a>
+    </nav>
+
+    <h1>Maiores campeões do Super Bowl</h1>
+    <div class="container">
+        <div class="galeria">
+            <figure>
+                <img src="assets/patriots.jpg" alt="Logo Patriots">
+                <figcaption>New England Patriots <br> <span class="quantidade"> 6 títulos</span></figcaption>
+            </figure>
+            <figure>
+                <img src="assets/steelers.jpg" alt="Logo Steelers">
+                <figcaption>Pittsburgh Steelers <br> <span class="quantidade"> 6 títulos</span></figcaption>
+            </figure>
+            <figure>
+                <img src="assets/49ers.jpg" alt="Logo 49ers">
+                <figcaption>San Francisco 49ers <br> <span class="quantidade"> 5 títulos</span></figcaption>
+            </figure>
+            <figure>
+                <img src="assets/cowboys.jpg" alt="Logo Cowboys">
+                <figcaption>Dallas Cowboys <br> <span class="quantidade"> 5 títulos</span> </figcaption>
+            </figure>
+            <figure>
+                <img src="assets/packers.jpg" alt="Logo Packers">
+                <figcaption>Green Bay Packers <br> <span class="quantidade"> 4 títulos</span></figcaption>
+            </figure>
+            <figure>
+                <img src="assets/giants.jpg" alt="Logo Giants">
+                <figcaption>New York Giants <br> <span class="quantidade"> 4 títulos</span></figcaption>
+            </figure>
+            <figure>
+                <img src="assets/broncos.jpg" alt="Logo Broncos">
+                <figcaption>Denver Broncos <br> <span class="quantidade"> 3 títulos</span></figcaption>
+            </figure>
+            <figure>
+                <img src="assets/raiders.jpg" alt="Logo Raiders">
+                <figcaption>Las Vegas Raiders <br> <span class="quantidade"> 3 títulos</span></figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <script>
+        const hamburguer = document.getElementById('hamburguer');
+        const menu = document.getElementById('menu');
+
+        hamburguer.addEventListener('click', () => {
+            menu.classList.toggle('aberto');
+        });
+  </script>
+</body>
+</html>

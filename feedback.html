@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-feedback.css">
     <title>Formulário Feedback</title>
 </head>
 <body>
     <form action="#">
+        <h1>Feedback</h1>
+
         <label for="nome">Nome:</label>
-        <input type="text" id="nome">
+        <input type="text" id="nome" required>
 
         <label for="email">E-mail:</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
 
         <label for="endereco">Endereço Completo:</label>
         <input type="text" id="endereco">
 
+        <label for="tipo-feedback">Tipo de feedback:</label>
+        <select name="tipo-feedback" id="tipo-feedback" required>
+            <option disabled selected value> -- selecione uma opção --</option>
+            <option value="fdb-elogio">Elogio</option>
+            <option value="fdb-sugestao">Sugestão</option>
+            <option value="fdb-critica">Crítica</option>
+        </select>
+
         <label for="feedback">Feedback:</label>
-        <textarea name="feedback" id="feedback" rows="5"></textarea>
+        <textarea name="feedback" id="feedback" rows="5" required></textarea>
 
         <input type="submit" value="Enviar">
     </form>
